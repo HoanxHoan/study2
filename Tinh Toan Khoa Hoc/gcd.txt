@@ -1,0 +1,10 @@
+function a = gcd(a,b) 
+a = round(abs(a)); b = round(abs(b)); 
+if a == 0 & b == 0 
+error('The gcd is not defined when both numbers are zero')
+else 
+while b ~= 0 
+r = rem(a,b) 
+a = b; b = r; 
+end 
+end
